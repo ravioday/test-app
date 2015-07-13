@@ -284,7 +284,6 @@
 }
 
 
-
 NSArray * (^findUniqueSubsetsForArray) (NSArray *) = ^ NSArray * (NSArray *inputArray) {
     NSArray *outputArray ;
     NSInteger subsetCount = 2^(inputArray.count);
