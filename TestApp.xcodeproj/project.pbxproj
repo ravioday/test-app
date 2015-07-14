@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413478001B550ABF00E0CB02 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 413477FF1B550ABF00E0CB02 /* TreeNode.m */; };
+		413478031B550CC700E0CB02 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 413478021B550CC700E0CB02 /* BinarySearchTree.m */; };
 		4172FBE61A031A2600BB25F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172FBE51A031A2600BB25F8 /* main.m */; };
 		4172FBE91A031A2600BB25F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172FBE81A031A2600BB25F8 /* AppDelegate.m */; };
 		4172FBEC1A031A2600BB25F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172FBEB1A031A2600BB25F8 /* ViewController.m */; };
@@ -31,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		413477FE1B550ABF00E0CB02 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		413477FF1B550ABF00E0CB02 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		413478011B550CC700E0CB02 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		413478021B550CC700E0CB02 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
 		4172FBE01A031A2600BB25F8 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4172FBE41A031A2600BB25F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4172FBE51A031A2600BB25F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413477FD1B550A9E00E0CB02 /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				413477FE1B550ABF00E0CB02 /* TreeNode.h */,
+				413477FF1B550ABF00E0CB02 /* TreeNode.m */,
+				413478011B550CC700E0CB02 /* BinarySearchTree.h */,
+				413478021B550CC700E0CB02 /* BinarySearchTree.m */,
+			);
+			name = BinarySearchTree;
+			sourceTree = "<group>";
+		};
 		4172FBD71A031A2600BB25F8 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +154,7 @@
 		41BAB6141B53B58700EE4F17 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				413477FD1B550A9E00E0CB02 /* BinarySearchTree */,
 				41BAB61B1B53C2DB00EE4F17 /* Dictionary */,
 			);
 			name = DataStructures;
@@ -266,6 +284,8 @@
 				4172FBEC1A031A2600BB25F8 /* ViewController.m in Sources */,
 				41BAB61A1B53C08900EE4F17 /* DictionaryEnumerator.m in Sources */,
 				4172FC0B1A055A2E00BB25F8 /* NodesController.m in Sources */,
+				413478001B550ABF00E0CB02 /* TreeNode.m in Sources */,
+				413478031B550CC700E0CB02 /* BinarySearchTree.m in Sources */,
 				4172FBE91A031A2600BB25F8 /* AppDelegate.m in Sources */,
 				41BAB6171B53BC1700EE4F17 /* DictionaryBucket.m in Sources */,
 				41BAB61F1B53C31400EE4F17 /* CustomDictionary.m in Sources */,
