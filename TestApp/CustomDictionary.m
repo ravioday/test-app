@@ -92,7 +92,7 @@
             bucket = _array[index];
         }
         
-        return bucket;
+        return [bucket key];
     }];
     
     return enumerator;
