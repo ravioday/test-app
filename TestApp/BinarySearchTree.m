@@ -113,9 +113,9 @@
     
     // Depending upon if the current node is the right or the left child, we assign the
     if (parentNode.leftNode == currentNode) {
-        parentNode.leftNode = qNode;
+        parentNode.leftNode = sucessorNode;
     } else {
-        parentNode.rightNode = qNode;
+        parentNode.rightNode = sucessorNode;
     }
     
     currentNode = nil;
