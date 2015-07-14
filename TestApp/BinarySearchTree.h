@@ -16,7 +16,7 @@
 - (TreeNode *)findKey:(id)data andNode:(TreeNode *)node;
 
 - (TreeNode *)insertNode:(id)nodeData andRoot:(TreeNode *)node;
-//
-//- (void)deleteNode:(id)nodeData;
+
+- (TreeNode *)deleteNode:(id)nodeData andRoot:(TreeNode *)node;
 
 @end
