@@ -20,6 +20,7 @@
 		41BAB6171B53BC1700EE4F17 /* DictionaryBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BAB6161B53BC1700EE4F17 /* DictionaryBucket.m */; };
 		41BAB61A1B53C08900EE4F17 /* DictionaryEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BAB6191B53C08900EE4F17 /* DictionaryEnumerator.m */; };
 		41BAB61F1B53C31400EE4F17 /* CustomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BAB61E1B53C31400EE4F17 /* CustomDictionary.m */; };
+		41BECA3D1B5662DE0086B6CA /* StringProblems.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BECA3C1B5662DE0086B6CA /* StringProblems.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		41BAB6191B53C08900EE4F17 /* DictionaryEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryEnumerator.m; sourceTree = "<group>"; };
 		41BAB61D1B53C31400EE4F17 /* CustomDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDictionary.h; sourceTree = "<group>"; };
 		41BAB61E1B53C31400EE4F17 /* CustomDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDictionary.m; sourceTree = "<group>"; };
+		41BECA3B1B5662DE0086B6CA /* StringProblems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringProblems.h; sourceTree = "<group>"; };
+		41BECA3C1B5662DE0086B6CA /* StringProblems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringProblems.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 		4172FBE21A031A2600BB25F8 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				41BECA3A1B5662CB0086B6CA /* Strings */,
 				41BAB6141B53B58700EE4F17 /* DataStructures */,
 				4172FBE71A031A2600BB25F8 /* AppDelegate.h */,
 				4172FBE81A031A2600BB25F8 /* AppDelegate.m */,
@@ -179,6 +183,15 @@
 				41BAB6191B53C08900EE4F17 /* DictionaryEnumerator.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		41BECA3A1B5662CB0086B6CA /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				41BECA3B1B5662DE0086B6CA /* StringProblems.h */,
+				41BECA3C1B5662DE0086B6CA /* StringProblems.m */,
+			);
+			name = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BECA3D1B5662DE0086B6CA /* StringProblems.m in Sources */,
 				4172FBEC1A031A2600BB25F8 /* ViewController.m in Sources */,
 				41BAB61A1B53C08900EE4F17 /* DictionaryEnumerator.m in Sources */,
 				4172FC0B1A055A2E00BB25F8 /* NodesController.m in Sources */,

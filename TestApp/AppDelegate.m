@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "NodesController.h"
+#import "NodesController.h"\
+
+#import "StringProblems.h"
+
 
 @interface AppDelegate ()
 
@@ -22,6 +25,10 @@
     
     NodesController *nodeController = [[NodesController alloc] init];
     [nodeController performAlgoRoutines];
+    
+    
+    StringProblems *problems = [[StringProblems alloc] init];
+    [problems convertStringToInteger:@"-868"];
     return YES;
 }
 
