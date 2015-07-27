@@ -63,7 +63,66 @@
     NSLog(@"Result Number is %ld", (long)result);
 }
 
+#pragma mark- Reverse all words in a sentence.
+// Reverse the whole sentence first and then reverse each word in the sentence.
+
+- (NSString *)reverseWordsInSentence:(NSString *)passedInSentences {
+    NSMutableString *sentence = [NSMutableString string];
+    NSString *reversedSentence = [self reverseString:[passedInSentences mutableCopy]];
+    NSArray *stringsArray = [reversedSentence componentsSeparatedByString:@" "];
+    for (NSString *string in stringsArray) {
+        NSString *reversedWord = [self reverseString:[string mutableCopy]];
+        [sentence appendString:reversedWord];
+    }
+    
+    return sentence;
+}
+
+#pragma mark - Compute all Mnemonics for a phone number using Iteration
+// For instance: 2276696 => ACRONYM or ABPOMZN and many others. so list all of them.
+
+- (NSMutableArray *)mnemonicsForNumber:(NSString *)number {
+    NSDictionary *numToAlpha = @{@"0" : @"0",
+                                 @"1" : @"1",
+                                 @"2" : @"ABC",
+                                 @"3" : @"DEF",
+                                 @"4" : @"GHI",
+                                 @"5" : @"JKL",
+                                 @"6" : @"MNO",
+                                 @"7" : @"PQRS",
+                                 @"8" : @"TUV",
+                                 @"9" : @"WXYZ"};
+    
+    NSArray *previousResultsArray = @[];
+    
+    for (int i =0; i < number.length; i++) {
+        NSString *currentChar = [number substringWithRange:NSMakeRange(i, 1)];
+        NSString *digitToAlphabet = numToAlpha[currentChar];
+        
+        NSMutableArray *tempArray = [NSMutableArray array];
+        
+        for (int j = 0; j < digitToAlphabet.length; j++) {
+            NSMutableString *currentAlphabet = [[digitToAlphabet substringWithRange:NSMakeRange(j, 1)] mutableCopy];
+            
+            if (previousResultsArray.count == 0) {
+                [tempArray addObject:currentAlphabet];
+            } else {
+                for (NSMutableString *string in previousResultsArray) {
+                    [string appendString:currentAlphabet];
+                    [tempArray addObject:string];
+                }
+            }
+        }
+        
+        previousResultsArray = tempArray;
+    }
+    
+    NSLog(@"Previous Array %@", previousResultsArray);
+    return nil;
+}
+
 #pragma mark- Helper Methods
+
 - (NSMutableString *)reverseString:(NSMutableString *)passedInString {
     
     NSMutableString *localString =[[NSMutableString alloc] init];

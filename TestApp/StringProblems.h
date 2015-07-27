@@ -14,4 +14,6 @@
 
 - (void)convertStringToInteger:(NSString *)numericString;
 
+- (NSMutableArray *)mnemonicsForNumber:(NSString *)number;
+
 @end

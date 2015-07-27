@@ -28,7 +28,7 @@
     
     
     StringProblems *problems = [[StringProblems alloc] init];
-    [problems convertStringToInteger:@"-868"];
+    [problems mnemonicsForNumber:@"22"];
     return YES;
 }
 
