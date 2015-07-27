@@ -81,7 +81,7 @@
 #pragma mark - Compute all Mnemonics for a phone number using Iteration
 // For instance: 2276696 => ACRONYM or ABPOMZN and many others. so list all of them.
 
-- (NSMutableArray *)mnemonicsForNumber:(NSString *)number {
+- (NSArray *)mnemonicsForNumber:(NSString *)number {
     NSDictionary *numToAlpha = @{@"0" : @"0",
                                  @"1" : @"1",
                                  @"2" : @"ABC",
@@ -93,7 +93,7 @@
                                  @"8" : @"TUV",
                                  @"9" : @"WXYZ"};
     
-    NSArray *previousResultsArray = @[];
+    NSArray *previousResultsArray = [NSArray array];
     
     for (int i =0; i < number.length; i++) {
         NSString *currentChar = [number substringWithRange:NSMakeRange(i, 1)];
@@ -103,22 +103,21 @@
         
         for (int j = 0; j < digitToAlphabet.length; j++) {
             NSMutableString *currentAlphabet = [[digitToAlphabet substringWithRange:NSMakeRange(j, 1)] mutableCopy];
-            
             if (previousResultsArray.count == 0) {
-                [tempArray addObject:currentAlphabet];
+                [tempArray addObject:[currentAlphabet mutableCopy]];
             } else {
                 for (NSMutableString *string in previousResultsArray) {
-                    [string appendString:currentAlphabet];
-                    [tempArray addObject:string];
+                    NSMutableString *localMutableCopy = [string mutableCopy];
+                    [localMutableCopy appendString:currentAlphabet];
+                    [tempArray addObject:localMutableCopy];
                 }
             }
         }
         
-        previousResultsArray = tempArray;
+        previousResultsArray = [NSArray arrayWithArray:tempArray];
     }
     
-    NSLog(@"Previous Array %@", previousResultsArray);
-    return nil;
+    return previousResultsArray;
 }
 
 #pragma mark- Helper Methods

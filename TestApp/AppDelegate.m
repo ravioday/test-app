@@ -28,7 +28,8 @@
     
     
     StringProblems *problems = [[StringProblems alloc] init];
-    [problems mnemonicsForNumber:@"22"];
+    
+    NSLog(@"The Mnemonics for a number are %@", [problems mnemonicsForNumber:@"225"]);
     return YES;
 }
 
