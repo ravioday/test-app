@@ -28,8 +28,9 @@
     
     
     StringProblems *problems = [[StringProblems alloc] init];
-    
     NSLog(@"The Mnemonics for a number are %@", [problems mnemonicsForNumber:@"225"]);
+    NSLog(@"The roman string is %@", [problems converIntToRoman:@63]);
+    NSLog(@"The number is %ld", (long)[problems convertRomanStringToInteger:@"LIV"]);
     return YES;
 }
 

@@ -16,4 +16,10 @@
 
 - (NSMutableArray *)mnemonicsForNumber:(NSString *)number;
 
+- (NSString *)converIntToRoman:(NSNumber *)number;
+
+- (NSInteger)convertRomanStringToInteger:(NSString *)string;
+
+- (NSMutableArray *)getAllValidIPAddressesForString:(NSString *)string;
+
 @end
